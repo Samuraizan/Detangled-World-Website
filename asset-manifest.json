@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/WebsiteDW/static/css/main.5087f818.css",
+    "main.js": "/WebsiteDW/static/js/main.709afd8a.js",
+    "static/media/3rdimg.png": "/WebsiteDW/static/media/3rdimg.f1b780310bb006ab006e.png",
+    "static/media/ConnectWallet.jpg": "/WebsiteDW/static/media/ConnectWallet.235058fe9214ae68e2c1.jpg",
+    "static/media/2ndbg.jpg": "/WebsiteDW/static/media/2ndbg.bdfd31e8dec7a8a47d46.jpg",
+    "static/media/DwSamuraizan.png": "/WebsiteDW/static/media/DwSamuraizan.a1436aa190acd55f8ec3.png",
+    "static/media/DWTarun.png": "/WebsiteDW/static/media/DWTarun.81365b8756a9909ccc60.png",
+    "static/media/DWUfe.png": "/WebsiteDW/static/media/DWUfe.a455cab62df99d24088a.png",
+    "static/media/DWYesh.png": "/WebsiteDW/static/media/DWYesh.16bebbcf7fe68b961846.png",
+    "static/media/DWAradhana.png": "/WebsiteDW/static/media/DWAradhana.ef30e0e7412def907030.png",
+    "static/media/comingsoon.png": "/WebsiteDW/static/media/comingsoon.e5e45877d9bfeeef6f41.png",
+    "static/media/phase1.png": "/WebsiteDW/static/media/phase1.7fb465c75444570d000a.png",
+    "static/media/phase4.png": "/WebsiteDW/static/media/phase4.a11eb42c6da82b2918f2.png",
+    "static/media/phase3.png": "/WebsiteDW/static/media/phase3.d825ed34fc3d2ebbbda2.png",
+    "static/media/phase2.png": "/WebsiteDW/static/media/phase2.7bff724ad5132dc215ab.png",
+    "static/media/Insta(Hover).png": "/WebsiteDW/static/media/Insta(Hover).db2411969a1b4edcc490.png",
+    "index.html": "/WebsiteDW/index.html",
+    "main.5087f818.css.map": "/WebsiteDW/static/css/main.5087f818.css.map",
+    "main.709afd8a.js.map": "/WebsiteDW/static/js/main.709afd8a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5087f818.css",
+    "static/js/main.709afd8a.js"
+  ]
+}
