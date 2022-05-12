@@ -1,0 +1,107 @@
+body {
+
+    background-color: #09080D !important;
+    /* background-image: linear-gradient(to right, #7b4397, #dc2430)!important; overflow-x: hidden;*/
+    overflow-x: hidden ;
+}
+
+h3 {
+    font-size: 25px !important;
+    font-weight: 100 !important;
+    color: #fff !important;
+    white-space: nowrap;
+    padding-left: 50px;
+}
+
+
+
+/* Navbar */
+
+.navbar {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.navitem {
+    color: #fff !important;
+    font: normal normal normal 18px/22px Poppins !important;
+    text-transform: capitalize !important;
+    padding-left: 40px !important;
+}
+
+.menu li:hover {
+    color: #111;
+    transform: scale(1.1);
+    text-shadow: none;
+    -webkit-transition: .3s all ease !important;
+    -o-transition: .3s all ease !important;
+    transition: .3s all ease !important;
+}
+
+/* Icons Hover */
+
+.hov {
+    font-size: 29px;
+    color: #fff !important;
+    margin-right: 30px;
+}
+
+.fa-twitter:hover {
+    color: #1DA1F2;
+    transform: scale(1.1);
+    -webkit-transition: .3s all ease !important;
+    -o-transition: .3s all ease !important;
+    transition: .3s all ease !important;
+
+}
+
+.fa-discord:hover {
+    color: #5865F2;
+    transform: scale(1.1);
+    -webkit-transition: .3s all ease !important;
+    -o-transition: .3s all ease !important;
+    transition: .3s all ease !important;
+
+}
+
+
+/* Button Hover */
+
+
+
+.btn {
+    align-items: center;
+    border-radius: 10px !important;
+    font-size: 13px !important;
+    margin-top: 6px !important;
+    margin-left: 5px !important;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    border: none;
+    border-radius: 30px !important;
+    letter-spacing: .02rem !important;
+    top: 6px !important;
+    position: relative !important;
+    -webkit-transition: .3s all ease !important;
+    -o-transition: .3s all ease !important;
+    transition: .3s all ease !important;
+    overflow: hidden !important;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background-color: #fff !important;
+    color: #545b62 !important;
+}
+
+
+
+@media screen and (max-width: 800px) {
+h3{
+    padding-left: 0px !important;
+    align-content: flex-start !important;
+}
+
+}

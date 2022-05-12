@@ -1,0 +1,162 @@
+
+
+
+.bp {
+  max-width: 100%;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  text-align: center;
+  font: normal normal 600 90px/150px Poppins;
+  letter-spacing: 15px;
+  color: #FFFF;
+  opacity: 1;
+}
+
+.accordion {
+  max-width: 990px;
+  background: rgba(0, 0, 0, 0.10);
+  height: 300px;
+  margin: 50px auto;
+  display: flex;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
+  flex-direction: row;
+  cursor: pointer;
+  margin-bottom: 100px;
+}
+
+.box2 {
+  position: relative;
+  height: 100%;
+  flex: 1;
+ 
+  background-position: left;
+  background-size: cover;
+  transition: .7s;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
+}
+
+.box2:hover {
+  flex: 7;
+  height: 400px;
+}
+
+.a1 {
+  background-image: url("../../img/phase1.png");
+  /* background-image: linear-gradient(to right, #283c86, #45a247); */
+  border:2px solid #E3E3E3 ;
+  color: #fff;
+}
+
+.a2 {
+  background-image: url("../../img/phase2.png");
+  /* background-image: linear-gradient(to right, #283c86, #45a247); */
+  border:2px solid #E3E3E3 ;
+  color: #fff;
+}
+
+.a3 {
+  background-image: url("../../img/phase3.png");
+  /* background-image: linear-gradient(to right, #283c86, #45a247); */
+  border:2px solid #E3E3E3 ;
+  color: #fff;
+}
+
+.a4 {
+  background-image: url("../../img/phase4.png");
+  /* background-image: linear-gradient(to right, #283c86, #45a247); */
+  /* background-image: url(""); */
+  border:2px solid #E3E3E3 ;
+  color: #fff;
+}
+
+.gp {        /* Phase Points class */
+  font-weight: bolder;
+
+  font: normal normal medium 52px/77px Poppins;
+  letter-spacing: 0px;
+  color: #FFF;
+}
+
+.text {
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  padding: 10px;
+  text-align: left;
+  font: normal normal normal 14px/24px Poppins;
+  margin-bottom: 10px;
+}
+
+.box2:hover .text {
+  opacity: 1;
+}
+
+h2.ph {
+  width: 100%;
+  text-align: center;
+  font: normal normal 400 70px/120px Poppins;
+  letter-spacing: 15px;
+  color: #fff;
+  opacity: 1;
+  /* margin: 70px auto 8px auto; */
+  /* width: 250px;
+        text-align: center;
+        margin: 100px auto 20px auto;
+        white-space: nowrap; */
+}
+
+.ph2 {
+  margin-bottom: 50px;
+}
+
+.ph3 {
+  margin-bottom: 2px;
+}
+
+.ph4 {
+  padding-top: 10px;
+  margin-bottom: 2px;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    margin: 0;
+  }
+
+  .bp{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font: normal normal 600 40px/80px Poppins;
+    letter-spacing: 19px;
+  }
+
+  h2.ph {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 20px;
+    font: normal normal 400 50px/100px Poppins;
+    letter-spacing: 12px;
+    color: #E3E3E3;
+  }
+  
+  .gp {        /* Phase Points class */
+    font-weight: normal;
+    font: normal normal medium 34px/59px Poppins;
+    letter-spacing: 0px;
+  }
+
+  .accordion {
+    flex-direction: column;
+    height: 700px;
+    box-shadow: none;
+  }
+
+  .box2 {
+    box-shadow: none;
+  }
+
+  .box2:hover {
+    flex: 7;
+  }
+}
