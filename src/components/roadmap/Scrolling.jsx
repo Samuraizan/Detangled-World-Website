@@ -1,12 +1,46 @@
-import React from 'react'
-import "./scrolling.css"
+import React, { useEffect, useState } from "react";
+import "./scrolling.css";
 
-const Scrolling = () => {
-  return (<div className="scroll-left">
-    <p>THINKER MEETS CREATOR
-    </p>
-    
-  </div>);
+function clampNumber(num, min, max) {
+  return Math.min(Math.max(num, min), max);
 }
 
-export default Scrolling
+const Scrolling = () => {
+  const [yPercent, setYPercent] = useState(0);
+  const [isInView, setIsInView] = useState(false);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
+        setIsInView(entry.isIntersecting);
+      },
+      { threshold: 0.1 }
+    );
+    observer.observe(document.querySelector("#scrolling-container"));
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolling = document.getElementById("scrolling");
+      if (isInView) {
+        const yPercent =
+          100 - (((window.innerHeight - scrolling.getBoundingClientRect().top) /
+            window.innerHeight) *
+          200);
+        console.log(yPercent);
+        setYPercent(clampNumber(yPercent, -100, 100));
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
+  return (
+    <div id="scrolling-container" className='scroll-left'>
+      <p id='scrolling' style={{ transform: `translateX(${yPercent}%)`, transitionDuration: "100ms" }}>THINKER MEETS CREATOR</p>
+    </div>
+  );
+};
+
+export default Scrolling;
