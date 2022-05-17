@@ -16,7 +16,7 @@ const Unlockyourvibe = () => {
   
 
   return (<><> < div data-aos="fade-in" className = 'center' > <div className='desc'>
-    Build a Global Home for your Digital Assets with us by joining our community.<br/>For the latest updates, announcements, giveaways and more.</div>
+    Join us on discord to become a core contributor in our community built metaverse.</div>
   <div className='unlock'>#UNLOCKYOURVIBE</div>
 </div>
 </>

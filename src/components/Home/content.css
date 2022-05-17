@@ -73,7 +73,11 @@
   .heading1{
     font-size:23px;
     padding-top: 20px;
-    padding-left: 4px;
+    padding-left: 10px;
+  }
+
+  .heading2{
+    padding-left: 10px;
   }
   
   .desc1{

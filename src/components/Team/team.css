@@ -150,8 +150,8 @@
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
-    font: normal normal 600 40px/100px Poppins;
-    letter-spacing: 18px;
+    font: normal normal 600 27px/60px Poppins;
+    letter-spacing: 10px;
   }
   .row2{
     flex-direction: column;
@@ -168,6 +168,10 @@
     padding: 0 1rem;
   }
 
+  .mot{
+    font: normal normal 600 27px/60px Poppins;
+    letter-spacing: 10px;
+  }
   .profile-card {
     padding: 20px;
   }

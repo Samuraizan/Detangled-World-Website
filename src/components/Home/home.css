@@ -4,21 +4,26 @@
   padding: 30px auto;
 }
 
-.mint{
+/* .mint{
   display: flex;
   position: relative;
   justify-content: center;
   align-items:center ;
 }
-
-.mintbtn{
+.ml{
   position: absolute;
   z-index: 1;
   margin-top: 60px;
   height: 40px;
 }
+.mintbtn{
+ 
+  margin-top: 60px;
+  height: 40px;
+} */
 
-.svgLogo {
+
+/* .svgLogo {
   fill: #FFF;
   text-align: center;
   max-width: 100%;
@@ -27,4 +32,5 @@
   position: absolute;
   margin: auto;
   z-index: 1;
-}
+} */
+

@@ -18,7 +18,7 @@ useEffect(() => {
 
     <div className="mint">
       {/* <img src={Logo} alt="Logo" className="svgLogo"/>  */}
-      <img src={UnlockH} alt="MintBtn" className="mintbtn"/>
+      {/* <a href="https://discord.gg/R9fuT7Da95" target="_blank" className="ml" ><img src={UnlockH} alt="MintBtn" className="mintbtn"/></a> */}
 
       <img data-aos="fade-in" data-aos-easing="ease-in-out" src={firstImg} alt='Blendimage' className='imgbg' />
     </div>

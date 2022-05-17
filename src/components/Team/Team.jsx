@@ -16,7 +16,7 @@ Aos.init({duration:2000});
 },[]);
 
 return (<>
-  <h2 data-aos="fade-in" data-aos-easing="ease-in-out" className="mot"> MEET OUR TEAM </h2>
+  <h2 data-aos="fade-in" data-aos-easing="ease-in-out" className="mot">CORE CONTRIBUTORS</h2>
   <div data-aos="fade-in" data-aos-easing="ease-in-out" className="container">
     <div className="grid">
       <div className="row2 ">

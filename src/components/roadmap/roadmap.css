@@ -131,6 +131,7 @@ h2.ph {
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
+    padding-left: 10px;
     font: normal normal 600 40px/80px Poppins;
     letter-spacing: 19px;
   }
@@ -160,7 +161,7 @@ h2.ph {
     box-shadow: none;
   }
 
-  .box2:hover {
+  .box2:hover .text, .box2.opened .text{
     flex: 7;
   }
 }
