@@ -25,6 +25,10 @@
 }
 
 .box2 {
+  overflow: hidden;
+}
+
+.box2, .box2.closed {
   position: relative;
   height: 100%;
   flex: 1;
@@ -35,7 +39,7 @@
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
 }
 
-.box2:hover {
+.box2:hover, .box2.opened {
   flex: 7;
   height: 400px;
 }
@@ -87,7 +91,7 @@
   margin-bottom: 10px;
 }
 
-.box2:hover .text {
+.box2:hover .text, .box2.opened .text {
   opacity: 1;
 }
 

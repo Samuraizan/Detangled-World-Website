@@ -3,9 +3,20 @@ import Aos from "aos";
 import "../../components/roadmap/roadmap.css";
 
 const Roadmap = () => {
+  const [openedPhase, setOpenedPhase] = React.useState(null);
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+
+  const handlePhaseClick = (phase) => {
+    if (phase === openedPhase) {
+      setOpenedPhase(null);
+    } else setOpenedPhase(phase);
+  };
+
+  function getPhaseClickHandler(phase) {
+    return () => handlePhaseClick(phase);
+  }
 
   return (
     <>
@@ -16,13 +27,13 @@ const Roadmap = () => {
         className='bp'
         id='ROADMAP'>
         {" "}
-         BLUEPRINT
+        BLUEPRINT
       </h2>{" "}
       <div
         data-aos='fade-in'
         data-aos-easing='ease-in-out'
         className='accordion'>
-        <div className='box2 a1'>
+        <div className={"box2 a1 " + (openedPhase === 0 ? "opened" : "closed")} onClick={getPhaseClickHandler(0)}>
           {" "}
           <div className='image_1'>
             <div className='text'>
@@ -37,12 +48,11 @@ const Roadmap = () => {
           </div>{" "}
         </div>
 
-        <div className='box2 a2'>
+        <div className={"box2 a2 " + (openedPhase === 1 ? "opened" : "closed")} onClick={getPhaseClickHandler(1)}>
           {" "}
           <div className='image_2'>
             <div className='text'>
-              {/* <h2 className='ph ph2'>PHASE 2</h2> */}
-              {" "}
+              {/* <h2 className='ph ph2'>PHASE 2</h2> */}{" "}
               <p className='gp'>First Look of the Demo Lobby/Space.</p>
               <p className='gp'>
                 Initiate Bug Bounty for “Believers” (Early Supporters)
@@ -53,12 +63,11 @@ const Roadmap = () => {
           </div>{" "}
         </div>
 
-        <div className='box2 a3'>
+        <div className={"box2 a3 " + (openedPhase === 2 ? "opened" : "closed")} onClick={getPhaseClickHandler(2)}>
           {" "}
           <div className='image_3'>
             <div className='text'>
-              {/* <h2 className='ph ph3'>PHASE 3</h2> */}
-              {" "}
+              {/* <h2 className='ph ph3'>PHASE 3</h2> */}{" "}
               <p className='gp'>Genesis Spaces</p>
               <p className='gp'>Access Cards presale/public. TBA</p>
               {/* <p className='gp'>
@@ -72,19 +81,16 @@ const Roadmap = () => {
             </div>
           </div>{" "}
         </div>
-        <div className='box2 a4'>
+        <div className={"box2 a4 " + (openedPhase === 3 ? "opened" : "closed")} onClick={getPhaseClickHandler(3)}>
           {" "}
           <div className='image_4'>
             <div className='text'>
-              {/* <h2 className='ph ph4'>PHASE 4</h2> */}
-              {" "}
+              {/* <h2 className='ph ph4'>PHASE 4</h2> */}{" "}
               <p className='gp'>
-                Access Cards presale/public. <br /> 
+                Access Cards presale/public. <br />
                 |—----Genesis Spaces : TBA
               </p>
-              <p className='gp'>
-                Creator Summit. - IRL MEET-UP
-              </p>
+              <p className='gp'>Creator Summit. - IRL MEET-UP</p>
               <p className='gp'>Multiplayer launch for Demo Spaces</p>
               <p className='gp'>Detangled Market Place</p>
               <p className='gp'>Production App Launch on Android/IOS</p>
