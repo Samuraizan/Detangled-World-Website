@@ -24,7 +24,27 @@ const networks = {
     ],
     blockExplorerUrls: ["https://bscscan.com/"],
   },
+  polygon: {
+    chainId: `0x${Number(137).toString(16)}`,
+    chainName: "Polygon Mainnet",
+    nativeCurrency: {
+      name: "Matic",
+      symbol: "MATIC",
+      decimals: 18,
+    },
+    rpcUrls: [
+      "https://rpc-mainnet.matic.quiknode.pro/",
+      "https://rpc-mainnet.matic.network/",
+      "https://rpc-mainnet.maticvigil.com/",
+      "https://polygon-rpc.com/",
+    ],
+    blockExplorerUrls: ["https://polygonscan.com/"],
+  },
 };
+
+function isEqualNumber(a, b) {
+  return Number.parseInt(a.toString()) === Number.parseInt(b.toString());
+}
 
 const providerOptions = {
   /* See Provider Options Section */
@@ -32,16 +52,16 @@ const providerOptions = {
     package: WalletConnectProvider,
     options: {
       rpc: {
-        56: "https://bsc-dataseed.binance.org/",
+        137: "https://polygon-rpc.com/",
       },
-      network: "binance",
-      chainId: 56,
+      network: "polygon",
+      chainId: 137,
     },
   },
   injected: {
     package: null,
     options: {
-      chainId: 56,
+      chainId: 137,
     },
   },
 };
@@ -93,16 +113,33 @@ export function AccountProvider({ children }) {
             }
           }
         };
+        const switchNetworkPolygon = async () => {
+          try {
+            await instance.request({
+              method: "wallet_switchEthereumChain",
+              params: [{ chainId: networks.polygon.chainId }],
+            });
+          } catch (error) {
+            if (error.code === 4902) {
+              await instance.request({
+                method: "wallet_addEthereumChain",
+                params: [networks.polygon],
+              });
+            } else {
+              throw error;
+            }
+          }
+        };
         let provider = new ethers.providers.Web3Provider(instance);
 
         let network = await provider.getNetwork();
-        if (network.chainId !== networks.bsc.chainId && network.chainId != 56) {
-          await switchNetworkBsc();
+        if (!isEqualNumber(network.chainId, networks.polygon.chainId)) {
+          await switchNetworkPolygon();
         }
         provider = new ethers.providers.Web3Provider(instance);
-        // // If it's still not BSC
+        // // If it's still not polygon
         network = await provider.getNetwork();
-        if (network.chainId !== networks.bsc.chainId && network.chainId != 56) {
+        if (!isEqualNumber(network.chainId, networks.polygon.chainId)) {
           throw Error("Invalid network");
         }
 
@@ -141,7 +178,6 @@ export function AccountProvider({ children }) {
   useEffect(() => {
     provider?.on("chainChanged", closeConnection);
     provider?.on("accountsChanged", closeConnection);
-    
 
     return () => {
       provider?.off("chainChanged", closeConnection);
