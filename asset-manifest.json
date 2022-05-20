@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Detangled-World-Website/static/css/main.e45c5915.css",
-    "main.js": "/Detangled-World-Website/static/js/main.aee9ef3a.js",
+    "main.css": "/Detangled-World-Website/static/css/main.07c55467.css",
+    "main.js": "/Detangled-World-Website/static/js/main.5ccda48e.js",
     "static/media/3rdimg.png": "/Detangled-World-Website/static/media/3rdimg.f1b780310bb006ab006e.png",
     "static/media/ConnectWallet.jpg": "/Detangled-World-Website/static/media/ConnectWallet.235058fe9214ae68e2c1.jpg",
     "static/media/2ndbg.jpg": "/Detangled-World-Website/static/media/2ndbg.bdfd31e8dec7a8a47d46.jpg",
@@ -17,11 +17,11 @@
     "static/media/phase2.png": "/Detangled-World-Website/static/media/phase2.e8e9a9b62006d2a8e3be.png",
     "static/media/Insta(Hover).png": "/Detangled-World-Website/static/media/Insta(Hover).db2411969a1b4edcc490.png",
     "index.html": "/Detangled-World-Website/index.html",
-    "main.e45c5915.css.map": "/Detangled-World-Website/static/css/main.e45c5915.css.map",
-    "main.aee9ef3a.js.map": "/Detangled-World-Website/static/js/main.aee9ef3a.js.map"
+    "main.07c55467.css.map": "/Detangled-World-Website/static/css/main.07c55467.css.map",
+    "main.5ccda48e.js.map": "/Detangled-World-Website/static/js/main.5ccda48e.js.map"
   },
   "entrypoints": [
-    "static/css/main.e45c5915.css",
-    "static/js/main.aee9ef3a.js"
+    "static/css/main.07c55467.css",
+    "static/js/main.5ccda48e.js"
   ]
 }
