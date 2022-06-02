@@ -22,20 +22,20 @@ const Unlockyourvibe = () => {
 </>
 <div data-aos="fade-in"  className='container2'>
 <div className="image-wrapper">
-  <a href="https://twitter.com/UnlockYourVibe" target="_blank">
+  <a href="https://twitter.com/UnlockYourVibe" target="_blank" rel="noreferrer">
   <img src={Twitter} className="image" alt="normal"/>
   <img src={TwitterHover} className="image-hover" alt="hover"/>
   </a>
 </div>
 
 <div className="image-wrapper">
-<a href="https://instagram.com/unlockyour.vibe" target="_blank">
+<a href="https://instagram.com/unlockyour.vibe" target="_blank" rel="noreferrer">
   <img src={Insta} className="image" alt="normal"/>
   <img src={InstaHover} className="image-hover" alt="hover"/></a>
 </div>
 
 <div className="image-wrapper">
-  <a href="https://discord.gg/R9fuT7Da95" target="_blank">
+  <a href="https://discord.gg/R9fuT7Da95" target="_blank" rel="noreferrer">
   <img src={Discordbtn} className="image" alt="normal"/>
   <img src={DiscordHover} className="image-hover" alt="hover"/></a>
 </div>

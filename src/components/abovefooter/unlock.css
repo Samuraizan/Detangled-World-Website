@@ -18,8 +18,9 @@ desc {
 .unlock {
   margin-top: -134px;
   position: absolute;
+  text-align: center;
   font-size: 140px;
-  max-width: 100%;
+  width: 100%;
   height: 263px;
   opacity: 0.16;
 
