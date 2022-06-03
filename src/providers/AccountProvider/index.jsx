@@ -54,8 +54,6 @@ const providerOptions = {
       rpc: {
         137: "https://polygon-rpc.com/",
       },
-      network: "polygon",
-      chainId: 137,
     },
   },
   injected: {
@@ -67,7 +65,7 @@ const providerOptions = {
 };
 
 const web3Modal = new Web3Modal({
-  network: "binance",
+  network: "matic",
   cacheProvider: false,
   providerOptions,
   theme: "dark",
@@ -91,10 +89,6 @@ export function AccountProvider({ children }) {
     setLoading(true);
     web3Modal
       .connect()
-      .catch((error) => {
-        showErrorToast();
-        console.error("Error connecting wallet", error);
-      })
       .then(async (instance) => {
         const switchNetworkBsc = async () => {
           try {
@@ -168,20 +162,23 @@ export function AccountProvider({ children }) {
   });
 
   const closeConnection = useCallback(() => {
-    setAccount(null);
     setConnected(false);
+    setAccount(null);
     setProvider(null);
     setSigner(null);
   });
 
   // to handle changes later
   useEffect(() => {
-    provider?.on("chainChanged", closeConnection);
-    provider?.on("accountsChanged", closeConnection);
+    console.log("AccountProvider mounted", provider);
+    provider?.provider?.on("chainChanged", closeConnection);
+    provider?.provider?.on("accountsChanged", closeConnection);
+    provider?.provider?.on("disconnect", closeConnection);
 
     return () => {
-      provider?.off("chainChanged", closeConnection);
-      provider?.off("accountsChanged", closeConnection);
+      provider?.provider?.off("chainChanged", closeConnection);
+      provider?.provider?.off("accountsChanged", closeConnection);
+      provider?.provider?.off("disconnect", closeConnection);
     };
   }, [provider]);
 

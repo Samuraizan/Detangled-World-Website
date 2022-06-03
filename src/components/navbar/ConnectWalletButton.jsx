@@ -15,7 +15,7 @@ export const ConnectWalletButton = ({ className }) => {
         "btn mb-3 mr-3 btn-secondary" + (className ? " " + className : "")
       }
       onClick={connected || loading ? null : connectWallet}>
-      {connected
+      {connected && account
         ? formatAccount(account)
         : loading
         ? "Loading ..."
