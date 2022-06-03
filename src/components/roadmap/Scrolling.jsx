@@ -29,7 +29,6 @@ const Scrolling = () => {
           100 - (((window.innerHeight - scrolling.getBoundingClientRect().top) /
             window.innerHeight) *
           200);
-        console.log(yPercent);
         setYPercent(clampNumber(yPercent, -100, 100));
       }
     };
@@ -38,7 +37,7 @@ const Scrolling = () => {
   });
   return (
     <div id="scrolling-container" className='scroll-left'>
-      <p id='scrolling' style={{ transform: `translateX(${yPercent}%)`, transitionDuration: "100ms" }}>THINKER MEETS CREATOR</p>
+      <p id='scrolling' style={{ transform: `translateX(${yPercent}%)`, transitionDuration: "3000ms", transitionTimingFunction: "ease-out" }}>THINKER MEETS CREATOR</p>
     </div>
   );
 };
