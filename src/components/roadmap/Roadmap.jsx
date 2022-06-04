@@ -38,8 +38,9 @@ const Roadmap = () => {
           <div className='image_1'>
             <div className='text'>
               {/* <h2 className='ph'>PHASE 1</h2> */}
-              <p className='gp'>
-                Website/Landing Site with roadmap and plan of action.
+              <p className='gp'><strike className='strike'>
+                <span className="stext">Website/Landing Site with roadmap and plan of action.</span>
+                  </strike>
               </p>
               <p className='gp'>Design implementation for Alpha Space.</p>
               <p className='gp'>Development of First Virtual Space.</p>

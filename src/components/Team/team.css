@@ -51,13 +51,16 @@
 .profile-card {
   width: 220px;
   height: 220px;
-  background: #09080D;
+  background: #6f346e;
   padding: 30px;
   border-radius: 50%;
-  box-shadow: 0 0 22px #191526;
+  box-shadow: 0 0 22px #ff3fdca2;
   transition: .6s;
   margin: 0 25px;
 }
+
+
+
 
 .profile-card:hover {
   border-radius: 10px;

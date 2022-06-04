@@ -22,12 +22,12 @@ return (<>
       <div className="row2 ">
         <div className="profile-card">
           <div className="img">
-            <img src={samurai} /> </div>
+            <img src={samurai} alt="Samuraizan"/> </div>
           <div className="caption">
             <h3>Samuraizan</h3>
             <p>Web3 Warrior</p>
             <div className="social-links">
-              <a href="https://www.linkedin.com/in/ashwin-panicker-40865942/" target="_blank">
+              <a href="https://www.linkedin.com/in/ashwin-panicker-40865942/" target="_blank" rel="noreferrer">
                 <FaLinkedin className="fab fa-linkedin-in" />
               </a>
               {/* <a href="#">
@@ -41,7 +41,7 @@ return (<>
         </div>
         <div className="profile-card">
           <div className="img">
-            <img src={aradhana} />
+            <img src={aradhana} alt="Aradhana"/>
           </div>
           <div className="caption">
             <h3>Aradhana</h3>
@@ -50,10 +50,10 @@ return (<>
               {/* <a href="#">
                 <FaLinkedin className="fab fa-linkedin-in" target="_blank" />
               </a> */}
-              <a href="https://www.instagram.com/naturalista_blog/" target="_blank">
+              <a href="https://www.instagram.com/naturalista_blog/" target="_blank" rel="noreferrer">
                 <FaInstagram className="fab fa-instagram" />
               </a>
-              <a href="https://twitter.com/Aradhwin" target="_blank">
+              <a href="https://twitter.com/Aradhwin" target="_blank" rel="noreferrer">
                 <FaTwitter className="fa-twitter" />
               </a>
             </div>
@@ -61,7 +61,7 @@ return (<>
         </div>
         <div className="profile-card">
           <div className="img">
-            <img src={tarun} />
+            <img src={tarun} alt="Tarun"/>
           </div>
           <div className="caption">
             <h3>Tarun</h3>
@@ -69,13 +69,13 @@ return (<>
               Game Tester
             </p>
             <div className="social-links">
-              <a href="https://www.behance.net/tarun_thusu" target="_blank">
+              <a href="https://www.behance.net/tarun_thusu" target="_blank" rel="noreferrer">
                 <FaBehanceSquare className="fab fa-behance" />
               </a>
-              <a href="https://www.instagram.com/tarun_thusu/" target="_blank">
+              <a href="https://www.instagram.com/tarun_thusu/" target="_blank" rel="noreferrer">
                 <FaInstagram className="fab fa-instagram" />
               </a>
-              <a href="https://twitter.com/tarunthusu" target="_blank">
+              <a href="https://twitter.com/tarunthusu" target="_blank" rel="noreferrer">
                 <FaTwitter className="fa-twitter" />
               </a>
             </div>
@@ -85,7 +85,7 @@ return (<>
       <div className="row2 r2">
         <div className="profile-card">
           <div className="img">
-            <img src={ufe} />
+            <img src={ufe} alt="UFE"/>
           </div>
           <div className="caption">
             <h3>UFE</h3>
@@ -93,13 +93,13 @@ return (<>
               Blockchain Developer
             </p>
             <div className="social-links">
-              <a href="https://www.linkedin.com/in/ufedojo-atabo" target="_blank">
+              <a href="https://www.linkedin.com/in/ufedojo-atabo" target="_blank" rel="noreferrer">
                 <FaLinkedin className="fab fa-linkedin-in" />
               </a>
               {/* <a href="#">
                 <FaInstagram className="fab fa-instagram" target="_blank" />
               </a> */}
-              <a href="https://twitter.com/ufedojo_dev" target="_blank">
+              <a href="https://twitter.com/ufedojo_dev" target="_blank" rel="noreferrer">
                 <FaTwitter className="fa-twitter" />
               </a>
             </div>
@@ -107,7 +107,7 @@ return (<>
         </div>
         <div className="profile-card">
           <div className="img">
-            <img src={yesh} />
+            <img src={yesh} alt="Yesh"/>
           </div>
           <div className="caption">
             <h3>Yesh</h3>
@@ -115,13 +115,13 @@ return (<>
               Web Wizard
             </p>
             <div className="social-links">
-              <a href="https://www.linkedin.com/in/yeshwanthreddyvallela/" target="_blank">
+              <a href="https://www.linkedin.com/in/yeshwanthreddyvallela/" target="_blank" rel="noreferrer">
                 <FaLinkedin className="fab fa-linkedin-in" />
               </a>
-              <a href="https://www.instagram.com/predator0430/" target="_blank">
+              <a href="https://www.instagram.com/predator0430/" target="_blank" rel="noreferrer">
                 <FaInstagram className="fab fa-instagram" />
               </a>
-              <a href="https://twitter.com/yeshvallela" target="_blank">
+              <a href="https://twitter.com/yeshvallela" target="_blank" rel="noreferrer">
                 <FaTwitter className="fa-twitter" />
               </a>
             </div>

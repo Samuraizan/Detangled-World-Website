@@ -7,6 +7,7 @@
   text-align: center;
   letter-spacing: calc(var(--text-font-size) / 10);
   color: #43c6ac !important;
+  text-shadow:0 0 12px #87ffe7 !important;
   overflow: hidden;
   position: relative;
   font: normal normal 600 var(--text-font-size)/450px Poppins;
@@ -24,14 +25,7 @@
   margin: 0px;
   line-height: 1;
   text-align: center;
-  /* Starting position */
-  /* -moz-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%); */
-  /* Apply animation to this element */
-  /* -moz-animation: scroll-left 10s cubic-bezier(0.25, 0.1, 0.25, 1) infinite; */
-  /* -webkit-animation: scroll-left 10s cubic-bezier(0.25, 0.1, 0.25, 1) infinite; */
-  /* animation: scroll-left 10s cubic-bezier(0.25, 0.1, 0.25, 1) infinite; */
+ 
 }
 
 /* Move it (define the animation) */
